@@ -9,7 +9,7 @@ echo $array_month[7];
 $hello = "Hello,";
 $name = "Kouichi";
 $world = "s World!";
-echo  $gello + $name + $world;
+echo  $gello . $name . $world;
 
 $tech_boost = "tech";
 $tech_boost = $tech_boost + "boost";
@@ -30,5 +30,5 @@ $calender_2018 = [
     "December" => "12月"
      ];
      
-     echo calender_2018[11];
+     echo calender_2018["December"];
      ?>
