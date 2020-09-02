@@ -25,7 +25,7 @@ $calender_2018 = [
     "July" => "7月",
     "August" => "8月",
     "September" => "9月",
-    "0ctober" => "10月",
+    "October" => "10月",
     "Novvember" => "11月",
     "December" => "12月"
      ];
