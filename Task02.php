@@ -3,10 +3,10 @@
 //課題　問１
 $name = "コウイチ";
 
-if ($name =="コウイチ") {
-  echo "私は$nameです";
+if ($name ==="コウイチ") {
+  echo "私は". $name ."です";
 } else {
-  echo "私は$nameではありません";
+  echo "私は". $name ."ではありません";
 }
 
 //課題　問２
