@@ -10,37 +10,61 @@ echo f();
 //課題２
 
 function f($a, $b) {
-    return  $a + $b; 
-}    
-echo f(3,2)
+    return $a + $b;
+}
+echo f();
+
 
 //課題３
-
+$arr =  array(1, 3, 5, 7, 9);
 function num($arr) {
     $result = 1;
-    fareach($arr as $a) {
+    foreach($arr as $a) {
         $result *= $a;
     }
     return $result;
 }
-    echo naum(array(1, 3, 5, 7, 9));
+    echo num($arr);
     
 // 課題４
 
 function max_array($arr) {
     $max_number = $arr[0];
     foreach($arr as $a) {
-        if($max_naumber < a)
-        {
+        if($max_naumber < $a) {
             $max_number = $a;
         }
     }
  return $max_naumber;
 }
-echo max_array(array(4, 8, 15, 56 ,100))
+echo max_array(array(4, 8, 15, 56 ,100));
 
 //課題　５
+//strip_tagsの使い方
+$str = "<h1>strip_tags関数</h1>"
+   . "<p>タグ取り除くよっ！</p>";
+   echo strip_tags($str) . "\n";
+   
+//array_pushの使い方   
+$members=array("一郎", "二郎", "三郎");
+         array_push($members, "四郎", "五郎");
+         print_r($members);
+         
+//array_mergeの使い方
+$array1 = [1, 2, 3];
+$array2 = [10, 20, 30];
+$array3 = [100, 200, 300];
 
+$array = array_merge($array1, $array2, $array3);
 
+print_r($array);
 
+//time,mktimeの使い方
+$time = mktime(9);
+var_dump(date('Y年m月d日h時i分s秒', $time));
+print('<br/>');
+
+//dateも使い方
+echo date('Y/m/d');
+echo '<br>';
 ?>
