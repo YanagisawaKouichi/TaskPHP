@@ -5,14 +5,14 @@
 function f($a) {
      return $a *2;
 }
-echo f();
+echo f(5);
 
 //課題２
 
-function f($a, $b) {
-    return $a + $b;
+function s($A, $b) {
+    return $A + $b;
 }
-echo f();
+echo s(10, 20);
 
 
 //課題３
@@ -31,7 +31,7 @@ function num($arr) {
 function max_array($arr) {
     $max_number = $arr[0];
     foreach($arr as $a) {
-        if($max_naumber < $a) {
+        if($max_number < $a) {
             $max_number = $a;
         }
     }
@@ -48,7 +48,7 @@ $str = "<h1>strip_tags関数</h1>"
 //array_pushの使い方   
 $members=array("一郎", "二郎", "三郎");
          array_push($members, "四郎", "五郎");
-         print_r($members);
+         echo print_r($members);
          
 //array_mergeの使い方
 $array1 = [1, 2, 3];
@@ -57,12 +57,12 @@ $array3 = [100, 200, 300];
 
 $array = array_merge($array1, $array2, $array3);
 
-print_r($array);
+echo print_r($array);
 
 //time,mktimeの使い方
 $time = mktime(9);
 var_dump(date('Y年m月d日h時i分s秒', $time));
-print('<br/>');
+echo print('<br/>');
 
 //dateも使い方
 echo date('Y/m/d');
